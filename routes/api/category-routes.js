@@ -6,6 +6,7 @@ const {
 
 // The `/api/categories` endpoint
 
+// get all categories ✅
 router.get('/', async (req, res) => {
   // find all categories
   // be sure to include its associated Products
@@ -21,7 +22,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// get category by id
+// get category by id ✅
 router.get('/:id', async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
