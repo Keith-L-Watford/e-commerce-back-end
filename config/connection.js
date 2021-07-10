@@ -11,7 +11,7 @@ const Sequelize = require('sequelize');
 //         decimalNumbers: true,
 //       },
 //       port: 3306
-//     });
+//     }); 
 
 // module.exports = sequelize;
 
