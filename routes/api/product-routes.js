@@ -8,6 +8,7 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 router.get('/', (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
+  
 });
 
 // get one product
@@ -18,6 +19,7 @@ router.get('/:id', (req, res) => {
 });
 
 // create new product
+// I AM UNSURE WHAT IS GOING ON HERE
 router.post('/', (req, res) => {
   /* req.body should look like this...
     {
@@ -91,9 +93,8 @@ router.put('/:id', (req, res) => {
     });
 });
 
-// TO DO
+// delete one product by its `id` value
 router.delete('/:id', async (req, res) => {
-  // delete one product by its `id` value
   try {
     const productData = await Product.destroy({
       where: {
